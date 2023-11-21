@@ -1,13 +1,13 @@
-package com.dreamteam.basket;
+package com.dreamteam.statistics;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BasketApplication {
+public class StatisticsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BasketApplication.class, args);
+		SpringApplication.run(StatisticsApplication.class, args);
 	}
 
 }
