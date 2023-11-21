@@ -22,7 +22,7 @@ public class PlayerController{
 
 	@PostMapping
 	public Response addPlayer( @RequestBody Player player ) throws Exception{
-			
+		return null;		
 	}
 
 }
