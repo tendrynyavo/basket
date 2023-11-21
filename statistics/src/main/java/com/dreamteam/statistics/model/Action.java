@@ -4,12 +4,14 @@ import java.sql.Date;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
+import jakarta.persistence.Id;
 import jakarta.persistence.Column;
 
 @Entity
 @Table
 public class Action {
     
+    @Id
     @Column(name = "Id_action")
     String IdAction;
     String Reference;

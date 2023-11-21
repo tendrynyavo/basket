@@ -2,14 +2,12 @@ package com.dreamteam.statistics.model;
 
 import java.sql.Date;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import jakarta.persistence.Column;
+import jakarta.persistence.*;
 
 @Entity
 @Table
 public class Playoff {
-    
+    @Id
     @Column(name = "Id_playoff")
     String IdPlayoff;
 

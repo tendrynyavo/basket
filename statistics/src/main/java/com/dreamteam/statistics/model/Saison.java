@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 @Entity
 @Table
 public class Saison {
-    
+    @Id
     @Column(name = "Id_saison")
     String idSaison;
     String nom;
