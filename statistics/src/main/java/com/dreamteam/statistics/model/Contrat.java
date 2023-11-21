@@ -6,76 +6,77 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name="contrat")
+
 public class Contrat {
     
     @Id
     @Column(name = "Id_contrat")
-    String IdContrat;
+    String idContrat;
 
     @Column(name = "Date_contrat")
-    Date DateContrat;
+    Date dateContrat;
 
     @Column(name = "Id_joueur")
-    String IdJoueur;
+    String idJoueur;
 
     @Column(name = "Id_saison")
-    String IdSaison;
+    String idSaison;
 
     @Column(name = "Id_equipe")
-    String IdEquipe;
+    String idEquipe;
 
     //SETTERS
     public void setIdContrat(String id){
-        this.IdContrat = id;
+        this.idContrat = id;
     }
 
     public void setDateContrat(Date date){
-        this.DateContrat = date;
+        this.dateContrat = date;
     }
 
     public void setIdJoueur(String idj){
-        this.IdJoueur = idj;
+        this.idJoueur = idj;
     }
 
     public void setIdSaison(String ids){
-        this.IdSaison = ids;
+        this.idSaison = ids;
     }
 
     public void setIdEquipe(String ide){
-        this.IdEquipe = ide;
+        this.idEquipe = ide;
     }
 
     //GETTERS
     public String getIdContrat(){
-        return this.IdContrat;
+        return this.idContrat;
     }
 
     public Date getDateContrat(){
-        return this.DateContrat;
+        return this.dateContrat;
     }
 
     public String getIdJoueur(){
-        return this.IdJoueur;
+        return this.idJoueur;
     }
 
     public String getIdSaison(){
-        return this.IdSaison;
+        return this.idSaison;
     }
 
     public String getIdEquipe(){
-        return this.IdEquipe;
+        return this.idEquipe;
     }
 
-    public Contrat(){
+    // public Contrat(){
 
-    }
+    // }
 
-    public Contrat(String Idcontrat, Date datecontrat, String idjoueur, String idsaison, String idequipe){
-        this.setIdContrat(Idcontrat);
-        this.setDateContrat(datecontrat);
-        this.setIdJoueur(idjoueur);
-        this.setIdSaison(idsaison);
-        this.setIdEquipe(idequipe);
-    }
+    // public Contrat(String idcontrat, Date datecontrat, String idjoueur, String idsaison, String idequipe){
+    //     this.setIdContrat(idcontrat);
+    //     this.setDateContrat(datecontrat);
+    //     this.setIdJoueur(idjoueur);
+    //     this.setIdSaison(idsaison);
+    //     this.setIdEquipe(idequipe);
+    // }
     
 }

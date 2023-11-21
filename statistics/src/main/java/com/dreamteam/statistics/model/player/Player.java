@@ -15,7 +15,8 @@ public class Player{
 	@Column(name = "date_naissance")
 	Date naissance;
 
-	Contrat contrat;
+	
+	// Contrat contrat;
 
 	public Player() throws Exception{
 
@@ -59,16 +60,16 @@ public class Player{
 		return players;
 	}
 
-	public void setContrat(Contrat contrat){
-		this.contrat = contrat;
-	}
+	// public void setContrat(Contrat contrat){
+	// 	this.contrat = contrat;
+	// }
 
-	public Contrat getContrat(){
-		return this.contrat;
-	}
+	// public Contrat getContrat(){
+	// 	return this.contrat;
+	// }
 
-	public void setContrat() throws Exception{
+	// public void setContrat() throws Exception{
 
-	}
+	// }
 
 }
