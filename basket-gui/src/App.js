@@ -1,12 +1,11 @@
 import './App.css';
 import './index.css';
+import { Classement } from './page/Classement';
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <Classement />
     </div>
   );
 }
