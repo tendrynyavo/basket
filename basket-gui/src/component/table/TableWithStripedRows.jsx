@@ -49,10 +49,10 @@ const TABLE_ROWS = [
  
 export function TableWithStripedRows() {
   return (
-    <Card className="h-full rounded-lg w-full p-6">
+    <Card className="h-full rounded-lg w-full p-6 shadow">
       <table className="w-full min-w-max table-auto text-left">
         <thead>
-          <tr>
+          <tr className="bg-slate-900 text-white">
             {TABLE_HEAD.map((head) => (
               <th key={head} className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
                 <Typography
@@ -101,6 +101,11 @@ export function TableWithStripedRows() {
               </td>
               <td className="p-4">
                 <Typography variant="small" color="blue-gray" className="font-normal">
+                  {rpm}
+                </Typography>
+              </td>
+              <td className="p-4">
+                <Typography variant="small" color="blue-gray" className="font-normal">
                   {pdpm}
                 </Typography>
               </td>
@@ -122,11 +127,6 @@ export function TableWithStripedRows() {
               <td className="p-4">
                 <Typography variant="small" color="blue-gray" className="font-normal">
                   {lf}
-                </Typography>
-              </td>
-              <td className="p-4">
-                <Typography as="a" href="#" variant="small" color="blue-gray" className="font-medium">
-                  Edit
                 </Typography>
               </td>
             </tr>
