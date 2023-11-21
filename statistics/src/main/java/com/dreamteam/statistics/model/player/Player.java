@@ -2,9 +2,10 @@ package com.dreamteam.statistics.model.player;
 
 import java.sql.Date;
 import jakarta.persistence.*;
+import com.dreamteam.statistics.model.*;
 
 @Entity
-@Table("joueur")
+@Table(name="joueur")
 public class Player{
 	
 	@Id
@@ -13,6 +14,8 @@ public class Player{
 	String nom;
 	@Column(name = "date_naissance")
 	Date naissance;
+
+	Contrat contrat;
 
 	public Player() throws Exception{
 
@@ -54,6 +57,18 @@ public class Player{
 		players[2] = new Player( "1" , "Tendry" , Date.valueOf("2002-03-07") );
 
 		return players;
+	}
+
+	public void setContrat(Contrat contrat){
+		this.contrat = contrat;
+	}
+
+	public Contrat getContrat(){
+		return this.contrat;
+	}
+
+	public void setContrat() throws Exception{
+
 	}
 
 }
