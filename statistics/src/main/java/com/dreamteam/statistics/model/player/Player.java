@@ -1,11 +1,17 @@
 package com.dreamteam.statistics.model.player;
 
 import java.sql.Date;
+import jakarta.persistence.*;
 
+@Entity
+@Table("joueur")
 public class Player{
 	
+	@Id
+	@Column(name="id_joueur")
 	String id;
 	String nom;
+	@Column(name = "date_naissance")
 	Date naissance;
 
 	public Player() throws Exception{
