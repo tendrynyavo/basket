@@ -1,0 +1,4 @@
+com\dreamteam\statistics\model\player\Player.class
+com\dreamteam\statistics\response\Response.class
+com\dreamteam\statistics\controller\PlayerController.class
+com\dreamteam\statistics\StatisticsApplication.class

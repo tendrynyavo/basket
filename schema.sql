@@ -1,3 +1,8 @@
+drop database if exists basket;
+create database basket;
+
+\c basket;
+
 CREATE TABLE Joueur(
    id_joueur VARCHAR(50) ,
    nom VARCHAR(100) ,
